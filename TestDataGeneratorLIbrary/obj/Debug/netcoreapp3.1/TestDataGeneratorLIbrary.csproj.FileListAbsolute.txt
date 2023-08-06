@@ -1,0 +1,10 @@
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/bin/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.deps.json
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/bin/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.dll
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/bin/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.pdb
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/obj/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.csproj.AssemblyReference.cache
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/obj/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/obj/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.AssemblyInfoInputs.cache
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/obj/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.AssemblyInfo.cs
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/obj/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.csproj.CoreCompileInputs.cache
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/obj/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.dll
+/Users/teroleinonen/Documents/GitHub/TestDataGenerator/TestDataGeneratorLIbrary/obj/Debug/netcoreapp3.1/TestDataGeneratorLIbrary.pdb

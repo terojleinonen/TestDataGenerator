@@ -1,18 +1,23 @@
-﻿<Properties StartupConfiguration="{DA551392-6471-48A4-A045-18CC1845605B}|Default">
-  <MonoDevelop.Ide.ItemProperties.TestDatagenerator__harjoitus__1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{DA551392-6471-48A4-A045-18CC1845605B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestDatagenerator_harjoitus_1/Program.cs">
+    <Files>
+      <File FileName="TestDataGeneratorLIbrary/Person.cs" />
+      <File FileName="TestDataGeneratorLIbrary/TestDataGenerator.cs" />
+      <File FileName="TestDatagenerator_harjoitus_1/Program.cs" Line="21" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TestDatagenerator_harjoitus_1" expanded="True" selected="True" />
+          <Node name="TestDatagenerator_harjoitus_1" expanded="True">
+            <Node name="TestDataGeneratorLIbrary" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TestDatagenerator__harjoitus__1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
