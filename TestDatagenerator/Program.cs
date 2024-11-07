@@ -1,20 +1,15 @@
 ﻿using System;
-using TestDataGeneratorLIbrary;
+using TestDataGeneratorLibrary;
 
-namespace TestDatagenerator_harjoitus_1
+namespace TestDataGenerator
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            TestDataGenerator test = new TestDataGenerator();
-            Person person1 = test.GenerateRandomPerson("Olliriina");
-            Person person2 = test.GenerateRandomPerson();
-            Person person3 = test.GenerateRandomPerson();
-            Person person4 = test.GenerateRandomPerson(lastname:"Heikkinen");
-            Person person5 = test.GenerateRandomPerson();
-            Person person6 = test.GenerateRandomPerson("ViljaEmilia","Kujantakainen");
-            Person person7 = test.GenerateRandomPerson();
+            TestDataGeneratorLibrary.TestDataGenerator test = new TestDataGeneratorLibrary.TestDataGenerator();
+            Person person = test.GenerateRandomPerson();
+            Console.WriteLine(person.FirstName + " " + person.LastName + " " + person.Age);
         }
     }
 }

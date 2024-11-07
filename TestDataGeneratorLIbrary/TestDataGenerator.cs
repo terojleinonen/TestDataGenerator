@@ -1,84 +1,38 @@
 ﻿using System;
-namespace TestDataGeneratorLIbrary
+namespace TestDataGeneratorLibrary
 {
     public class TestDataGenerator
     {
-        public string GetRandomStringFromArray(string[] array)
-        {
-            Random random = new Random();
-            string tmp = array[random.Next(0, array.Length - 1)];
-            return tmp;
-        }
-
+        private readonly string[] _firstNameMales =  ["Pekka","Jorma","Ville","Matti","Olli","Juho","Niko","Risto"];
+        private readonly string[] _firstNameFemales = ["Anna", "Emilia", "Riina", "Roosa", "Minna", "Hanna","Päivi","Pilvi"];
+        private readonly string[] _lastNames = ["Mäkinen","Virtanen","Suomalainen","Ruotsalainen","Hämäläinen","Jokinen","Turpeinen","Grönfors"];
+        
         public Person GenerateRandomPerson(string firstname = "",string lastname = "")
         {
-            Person person = new Person();
-
-            if (firstname != "" && lastname != "")
-            {
-                person.firstName = firstname;
-                person.lastName = lastname;
-                person.age = RandomInt(0, 100);
-                return person;
-            }
-            else
-            {
-                if (firstname == "")
-                {
-                    person.Sex = RandomSex();
-
-                    if (person.Sex == Person.getSex.female)
-                    {
-                        person.firstName = GetRandomStringFromArray(Person.firstNameFemale);
-                    }
-                    if(person.Sex == Person.getSex.male)
-                    {
-                        person.firstName = GetRandomStringFromArray(Person.firstNameMales);
-                    }
-                }
-                else
-                {
-                    person.firstName = firstname;
-                }
-
-                if (lastname == "")
-                {
-                    person.lastName = GetRandomStringFromArray(Person.lastNames);
-                }
-                else
-                {
-                    person.lastName = lastname;
-                }
-
-                    person.age = RandomInt(0, 100);
-                    return person;
-            }      
+            Random random = new();
+            Person person = new();
+            var randomMaleNameIndex = random.Next(0, _firstNameMales.Length);
+            var randomFemaleNameIndex = random.Next(0, _firstNameFemales.Length);
+            person.Gender = RandomGender(random.Next(0,2));
+            person.FirstName = RandomFirstName(person.Gender, randomMaleNameIndex, randomFemaleNameIndex);
+            person.LastName = _lastNames[random.Next(0,_lastNames.Length)];
+            person.Age = random.Next(1, 100);
+            return person;
 
         }
 
-        public int RandomInt(int MIN, int MAX)
+        private static Person.GetGender RandomGender(int randomNumber) => randomNumber switch
         {
-            Random random = new Random();
-            return random.Next(MIN, MAX);
-        }
-
-        public Person.getSex RandomSex()
-        {
-            Person.getSex sex = (Person.getSex)(new Random()).Next(0,2);
-            
-            if (sex == Person.getSex.male)
-            {
-                return Person.getSex.male;
-            }
-            else
-            {
-                return Person.getSex.female;
-            }
-        }
+            0 => Person.GetGender.Male,
+            1 => Person.GetGender.Female,
+            _ => throw new ArgumentException("Invalid Gender")
+        };
         
-
-        public TestDataGenerator()
+        private string RandomFirstName(Person.GetGender gender, int randomMaleNameIndex, int randomFemaleNameIndex) => gender switch
         {
-        }
+            Person.GetGender.Female => _firstNameFemales[randomFemaleNameIndex],
+            Person.GetGender.Male => _firstNameMales[randomMaleNameIndex],
+            _ => throw new ArgumentException("Invalid Gender")
+    };
     }
 }
